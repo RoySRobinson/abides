@@ -1,6 +1,6 @@
 from setuptools import setup, find_packages
 
-setup(name='abides',
+setup(name='ABIDES',
       version='1.0.0',
       description='Agent-Based Interactive Discrete Event Simulation',
       url='https://github.com/abides-sim/abides',

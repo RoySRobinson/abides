@@ -11,7 +11,7 @@ def run_in_parallel(num_simulations, num_parallel, config, log_folder, verbose):
     global_seeds = np.random.randint(0, 2 ** 32, num_simulations)
     print(f'Global Seeds: {global_seeds}')
 
-    processes = [f'python -u abides.py -c {config} -l {log_folder}_seed_{seed} {"-v" if verbose else ""} -s {seed}'
+    processes = [f'python -u ABIDES.py -c {config} -l {log_folder}_seed_{seed} {"-v" if verbose else ""} -s {seed}'
                  for seed in global_seeds]
 
     pool = Pool(processes=num_parallel)

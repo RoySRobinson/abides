@@ -11,4 +11,4 @@ python -u abides.py -c execution -t ${ticker} -d ${date} -l ${log} -s ${seed} -e
 
 # (2) External Fundamental file
 #fundamental_path=${PWD}/data/synthetic_fundamental.bz2
-#python -u abides.py -c execution -t ${ticker} -d ${date} -f ${fundamental_path} -l ${log} -s ${seed} -e
+#python -u ABIDES.py -c execution -t ${ticker} -d ${date} -f ${fundamental_path} -l ${log} -s ${seed} -e
