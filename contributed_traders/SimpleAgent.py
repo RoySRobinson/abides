@@ -30,7 +30,7 @@ class SimpleAgent(TradingAgent):
     def kernelStarting(self, startTime):
         super().kernelStarting(startTime)
         # Read in the configuration through util
-        with open(get_file('contributed_traders/simple_agent.cfg'), 'r') as f:
+        with open(get_file('simple_agent.cfg'), 'r') as f:
             self.window1, self.window2 = [int(w) for w in f.readline().split()]
         #print(f"{self.window1} {self.window2}")
 
